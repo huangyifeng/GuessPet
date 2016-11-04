@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5933761DC9DAFB00CA8A86 /* Pets.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB5933751DC9DAFB00CA8A86 /* Pets.plist */; };
+		BB5933781DC9E02E00CA8A86 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933771DC9E02E00CA8A86 /* CardViewController.swift */; };
+		BB59337A1DC9E05300CA8A86 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5933791DC9E05300CA8A86 /* RevealViewController.swift */; };
+		BB59337C1DC9E1DE00CA8A86 /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB59337B1DC9E1DE00CA8A86 /* PetCard.swift */; };
+		BB59337E1DC9E1ED00CA8A86 /* PetCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB59337D1DC9E1ED00CA8A86 /* PetCardStore.swift */; };
+		BB68BC491DC9CD050079AA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68BC481DC9CD050079AA67 /* AppDelegate.swift */; };
+		BB68BC4E1DC9CD050079AA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68BC4C1DC9CD050079AA67 /* Main.storyboard */; };
+		BB68BC501DC9CD050079AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB68BC4F1DC9CD050079AA67 /* Assets.xcassets */; };
+		BB68BC531DC9CD050079AA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68BC511DC9CD050079AA67 /* LaunchScreen.storyboard */; };
+		BB68BC601DC9CE370079AA67 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68BC5F1DC9CE370079AA67 /* PageViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB5933751DC9DAFB00CA8A86 /* Pets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pets.plist; sourceTree = "<group>"; };
+		BB5933771DC9E02E00CA8A86 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		BB5933791DC9E05300CA8A86 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		BB59337B1DC9E1DE00CA8A86 /* PetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
+		BB59337D1DC9E1ED00CA8A86 /* PetCardStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCardStore.swift; sourceTree = "<group>"; };
+		BB68BC451DC9CD050079AA67 /* GuessPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB68BC481DC9CD050079AA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB68BC4D1DC9CD050079AA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB68BC4F1DC9CD050079AA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB68BC521DC9CD050079AA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB68BC541DC9CD050079AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB68BC5F1DC9CE370079AA67 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB68BC421DC9CD050079AA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB68BC3C1DC9CD050079AA67 = {
+			isa = PBXGroup;
+			children = (
+				BB68BC471DC9CD050079AA67 /* GuessPet */,
+				BB68BC461DC9CD050079AA67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB68BC461DC9CD050079AA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB68BC451DC9CD050079AA67 /* GuessPet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB68BC471DC9CD050079AA67 /* GuessPet */ = {
+			isa = PBXGroup;
+			children = (
+				BB68BC5E1DC9CE020079AA67 /* BundleFiles */,
+				BB68BC5D1DC9CDFB0079AA67 /* Model */,
+				BB68BC5C1DC9CDEA0079AA67 /* Controllers */,
+				BB68BC5B1DC9CDE60079AA67 /* UI */,
+				BB68BC5A1DC9CDE00079AA67 /* Data */,
+			);
+			path = GuessPet;
+			sourceTree = "<group>";
+		};
+		BB68BC5A1DC9CDE00079AA67 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB5933751DC9DAFB00CA8A86 /* Pets.plist */,
+				BB59337B1DC9E1DE00CA8A86 /* PetCard.swift */,
+				BB59337D1DC9E1ED00CA8A86 /* PetCardStore.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		BB68BC5B1DC9CDE60079AA67 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BB68BC4C1DC9CD050079AA67 /* Main.storyboard */,
+				BB68BC511DC9CD050079AA67 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BB68BC5C1DC9CDEA0079AA67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB68BC5F1DC9CE370079AA67 /* PageViewController.swift */,
+				BB5933771DC9E02E00CA8A86 /* CardViewController.swift */,
+				BB5933791DC9E05300CA8A86 /* RevealViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB68BC5D1DC9CDFB0079AA67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB68BC5E1DC9CE020079AA67 /* BundleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BB68BC481DC9CD050079AA67 /* AppDelegate.swift */,
+				BB68BC4F1DC9CD050079AA67 /* Assets.xcassets */,
+				BB68BC541DC9CD050079AA67 /* Info.plist */,
+			);
+			name = BundleFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB68BC441DC9CD050079AA67 /* GuessPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB68BC571DC9CD050079AA67 /* Build configuration list for PBXNativeTarget "GuessPet" */;
+			buildPhases = (
+				BB68BC411DC9CD050079AA67 /* Sources */,
+				BB68BC421DC9CD050079AA67 /* Frameworks */,
+				BB68BC431DC9CD050079AA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessPet;
+			productName = GuessPet;
+			productReference = BB68BC451DC9CD050079AA67 /* GuessPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB68BC3D1DC9CD050079AA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = cybozu;
+				TargetAttributes = {
+					BB68BC441DC9CD050079AA67 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VHY32ZU4KA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB68BC401DC9CD050079AA67 /* Build configuration list for PBXProject "GuessPet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB68BC3C1DC9CD050079AA67;
+			productRefGroup = BB68BC461DC9CD050079AA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB68BC441DC9CD050079AA67 /* GuessPet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB68BC431DC9CD050079AA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5933761DC9DAFB00CA8A86 /* Pets.plist in Resources */,
+				BB68BC531DC9CD050079AA67 /* LaunchScreen.storyboard in Resources */,
+				BB68BC501DC9CD050079AA67 /* Assets.xcassets in Resources */,
+				BB68BC4E1DC9CD050079AA67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB68BC411DC9CD050079AA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB68BC601DC9CE370079AA67 /* PageViewController.swift in Sources */,
+				BB59337C1DC9E1DE00CA8A86 /* PetCard.swift in Sources */,
+				BB68BC491DC9CD050079AA67 /* AppDelegate.swift in Sources */,
+				BB59337E1DC9E1ED00CA8A86 /* PetCardStore.swift in Sources */,
+				BB5933781DC9E02E00CA8A86 /* CardViewController.swift in Sources */,
+				BB59337A1DC9E05300CA8A86 /* RevealViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB68BC4C1DC9CD050079AA67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB68BC4D1DC9CD050079AA67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB68BC511DC9CD050079AA67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB68BC521DC9CD050079AA67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB68BC551DC9CD050079AA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB68BC561DC9CD050079AA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB68BC581DC9CD050079AA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VHY32ZU4KA;
+				INFOPLIST_FILE = GuessPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybozu.GuessPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BB68BC591DC9CD050079AA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VHY32ZU4KA;
+				INFOPLIST_FILE = GuessPet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybozu.GuessPet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB68BC401DC9CD050079AA67 /* Build configuration list for PBXProject "GuessPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB68BC551DC9CD050079AA67 /* Debug */,
+				BB68BC561DC9CD050079AA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB68BC571DC9CD050079AA67 /* Build configuration list for PBXNativeTarget "GuessPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB68BC581DC9CD050079AA67 /* Debug */,
+				BB68BC591DC9CD050079AA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB68BC3D1DC9CD050079AA67 /* Project object */;
+}

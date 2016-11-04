@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6369ef9f-ed7f-0410-948b-d9332a7d9350++6868" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6369ef9f-ed7f-0410-948b-d9332a7d9350++6868" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "95422B6D-BC8E-47EC-8BF5-2305E76AEFC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6369ef9f-ed7f-0410-948b-d9332a7d9350++6868" : "workspace\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GuessPet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "for_fun\/GuessPet\/GuessPet.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.dev.cybozu.co.jp\/svn\/gemini",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6369ef9f-ed7f-0410-948b-d9332a7d9350++6868"
+    }
+  ]
+}
