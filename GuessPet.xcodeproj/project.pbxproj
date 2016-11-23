@@ -17,6 +17,8 @@
 		BB68BC501DC9CD050079AA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB68BC4F1DC9CD050079AA67 /* Assets.xcassets */; };
 		BB68BC531DC9CD050079AA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB68BC511DC9CD050079AA67 /* LaunchScreen.storyboard */; };
 		BB68BC601DC9CE370079AA67 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68BC5F1DC9CE370079AA67 /* PageViewController.swift */; };
+		C46735611DE1A2DF0066C832 /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46735601DE1A2DF0066C832 /* FlipPresentAnimationController.swift */; };
+		C46735641DE1F7C70066C832 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46735631DE1F7C70066C832 /* AnimationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BB68BC521DC9CD050079AA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB68BC541DC9CD050079AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB68BC5F1DC9CE370079AA67 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C46735601DE1A2DF0066C832 /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipPresentAnimationController.swift; sourceTree = "<group>"; };
+		C46735631DE1F7C70066C832 /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				BB68BC5D1DC9CDFB0079AA67 /* Model */,
 				BB68BC5C1DC9CDEA0079AA67 /* Controllers */,
 				BB68BC5B1DC9CDE60079AA67 /* UI */,
+				C46735621DE1F7A40066C832 /* Helper */,
 				BB68BC5A1DC9CDE00079AA67 /* Data */,
 			);
 			path = GuessPet;
@@ -105,6 +110,7 @@
 		BB68BC5D1DC9CDFB0079AA67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C467355F1DE1A2C10066C832 /* AnimationController */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -117,6 +123,22 @@
 				BB68BC541DC9CD050079AA67 /* Info.plist */,
 			);
 			name = BundleFiles;
+			sourceTree = "<group>";
+		};
+		C467355F1DE1A2C10066C832 /* AnimationController */ = {
+			isa = PBXGroup;
+			children = (
+				C46735601DE1A2DF0066C832 /* FlipPresentAnimationController.swift */,
+			);
+			name = AnimationController;
+			sourceTree = "<group>";
+		};
+		C46735621DE1F7A40066C832 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C46735631DE1F7C70066C832 /* AnimationHelper.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +173,7 @@
 				TargetAttributes = {
 					BB68BC441DC9CD050079AA67 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = VHY32ZU4KA;
+						DevelopmentTeam = PDE8BRZA58;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46735641DE1F7C70066C832 /* AnimationHelper.swift in Sources */,
+				C46735611DE1A2DF0066C832 /* FlipPresentAnimationController.swift in Sources */,
 				BB68BC601DC9CE370079AA67 /* PageViewController.swift in Sources */,
 				BB59337C1DC9E1DE00CA8A86 /* PetCard.swift in Sources */,
 				BB68BC491DC9CD050079AA67 /* AppDelegate.swift in Sources */,
@@ -319,7 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VHY32ZU4KA;
+				DEVELOPMENT_TEAM = PDE8BRZA58;
 				INFOPLIST_FILE = GuessPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cybozu.GuessPet;
@@ -332,7 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VHY32ZU4KA;
+				DEVELOPMENT_TEAM = PDE8BRZA58;
 				INFOPLIST_FILE = GuessPet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cybozu.GuessPet;

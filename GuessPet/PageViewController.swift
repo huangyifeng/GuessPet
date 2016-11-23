@@ -21,9 +21,9 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         let viewController = viewController as? CardViewController
-        if 0 < viewController?.pageIndex!
+        if 0 < (viewController?.pageIndex!)!
         {
-            return self.viewControllerAtIndex(viewController?.pageIndex - 1)
+            return self.viewControllerAtIndex((viewController?.pageIndex)! - 1)
         }
         return nil
     }
@@ -31,7 +31,10 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         let viewController = viewController as? CardViewController
-//        if
+        if (viewController?.pageIndex)! < self.petCards.count - 1
+        {
+            return self.viewControllerAtIndex((viewController?.pageIndex)! + 1)
+        }
         
         return nil
     }
@@ -50,10 +53,10 @@ class PageViewController: UIPageViewController,UIPageViewControllerDataSource {
     
     
     func viewControllerAtIndex(_ index: Int) -> UIViewController? {
-        let card: PetCard = self.petCards[index]
         
         if let cardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardViewController") as? CardViewController
         {
+            let card: PetCard = self.petCards[index]
             cardViewController.petCard = card
             cardViewController.pageIndex = index
             

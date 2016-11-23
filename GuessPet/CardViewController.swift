@@ -10,10 +10,12 @@ import UIKit
 
 private let revealSegueId = "realSegue"
 
-class CardViewController: UIViewController {
+class CardViewController: UIViewController,UIViewControllerTransitioningDelegate {
     
     @IBOutlet private weak var cardView : UIView!
     @IBOutlet private weak var titleLabel : UILabel!
+    
+    private let flipController: FlipPresentAnimationController = FlipPresentAnimationController();
 
     public var pageIndex : Int!
     public var petCard: PetCard!
@@ -36,10 +38,22 @@ class CardViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == revealSegueId , let destinationController = segue.destination as? RevealViewController {
             destinationController.petCard = self.petCard
+            destinationController.transitioningDelegate = self;
         }
     }
 
     func handleTap(_ tapGesture: UITapGestureRecognizer) -> Void {
         self.performSegue(withIdentifier: revealSegueId, sender: nil)
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning?
+    {
+        self.flipController.originFrame = self.cardView.frame;
+        return self.flipController;
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil;
     }
 }
